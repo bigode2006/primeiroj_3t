@@ -1,4 +1,3 @@
-
 //console.log("Console: Alô Mundo...");
 //alert("Alerta: Alô Mundo...");
 
@@ -44,32 +43,38 @@ function quadrado (){
          document.write("o resultado é" + resultado);
  }
 
+function soma(){
+        let v1 = document.getElementById("v1").value;
+        let v2 = document.getElementById("v2").value;
+        let r =(v1 + v2);
+        document.getElementById("resultado").innerHTML = r;
+
+}
+
 function soma(){ 
-    let v1 = document.getElementById("v1").value;
-    let v2 = document.getElementById("v2").value;
+        let v1 = document.getElementById("v1").value;
+        let v2 = document.getElementById("v2").value;
         let r =(Number (v1) + Number (v2));
         document.getElementById("resultado").innerHTML = r;
 
 }
-function subtração(){ 
+function sub(){ 
         let v1 = document.getElementById("v1").value;
         let v2 = document.getElementById("v2").value;
-        let r =(Number(v1) - Number(v2));
+        let r =(Number (v1) - Number (v2));
         document.getElementById("resultado").innerHTML = r;
-}
-
-}
-function multiplicaçãO(){ 
-        let v1 = document.getElementById("v1").value;
-        let v2 = document.getElementById("v2").value;
-        let r =(Number(v1) * Number(v2));
-        document.getElementById("resultado").innerHTML = r;
-}
 
 }
 function divisão(){ 
         let v1 = document.getElementById("v1").value;
         let v2 = document.getElementById("v2").value;
-        let r =(Number(v1) / Number(v2));
+        let r =(Number (v1) / Number (v2));
+        document.getElementById("resultado").innerHTML = r;
+}
+
+function multiplicação(){ 
+        let v1 = document.getElementById("v1").value;
+        let v2 = document.getElementById("v2").value;
+        let r =(Number (v1) * Number (v2));
         document.getElementById("resultado").innerHTML = r;
 }
